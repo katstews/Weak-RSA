@@ -29,11 +29,11 @@ d = inverse(e,phi)
 ```
 **If you dont want to, heres the alt d formula**:
 ```
-for x in range(phi):
-    val = (x * e) % phi
+for d in range(phi):
+    val = (d * e) % phi
     if val == 1:
         print(val) 
-        print(x)
+        print(d)
 ```
 **phi**:
 ```
