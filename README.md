@@ -33,4 +33,16 @@ phi = (p-1) * (q-1)
 ```
 Now we see why p and q is important. You need to know p and q to derive phi, which you use phi to dervie the decryption key d.
 
-Basically you take your ciphertext (in its decminal rep) and take it to the power of your decryption key THEN modulo it by n (the modulus value). 
+Cryptodome offers a very useful tool called inverse, and I would highly recommend everyone uses that tool to dervie d. 
+
+Once we get d, we just perform the decryption formula, like so: 
+```
+decimalval = pow(ct,d,n)
+```
+Then we can use another cryptodome function to take the decimal value and convert it to binary text:
+```
+long_to_bytes(decimalval)
+```
+AND BOOM. 
+<img width="77" alt="Screenshot 2023-10-12 at 1 27 06 AM" src="https://github.com/katstews/Weak-RSA/assets/112781868/4d4efcd1-8e4d-44f0-b832-65f7a9ddab07">
+
