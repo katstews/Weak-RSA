@@ -12,7 +12,7 @@ Also check out my cool RSA slides here: https://docs.google.com/presentation/d/1
 
 ANYWAYS. Once we do whatever to convert the e and n to its decimal representation, we can now try to see if we can factorize that big assssss number. My fav website factordb.com. From there we'll find the respective p and q values and thats **ALL YOU NEED** to break RSA! 
 
-Now we take the enc file we have, its in binary no problem. Use openssl to encrypt it to base64:
+Now we take the enc file we have, its in binary no problem. Use openssl to erncode it to base64, so it makes it easier to work with:
 ```
 openssl base64 -in flag.enc -out flag.64
 ```
