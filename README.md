@@ -23,4 +23,14 @@ Ok. Now read the darn file and convert the following base64 values to its repspe
 ```
 plaintext = ciphertext**(d) % n
 ```
+**Decryption Key formula (d)**:
+```
+d = inverse(e,phi)
+```
+**phi**:
+```
+phi = (p-1) * (q-1)
+```
+Now we see why p and q is important. You need to know p and q to derive phi, which you use phi to dervie the decryption key d.
+
 Basically you take your ciphertext (in its decminal rep) and take it to the power of your decryption key THEN modulo it by n (the modulus value). 
