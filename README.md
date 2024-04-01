@@ -1,10 +1,10 @@
 # Weak RSA
 My solution to HTB Weak RSA without using RsaCtfTool. We going to do this the simple and OLD fashioned way. I actually had to look really hard to find a solution that didn't use RsaCtfTool, and it was actually impossible. So here's the best way to solve this problem. I promise you'll feel super fulfilled. Solution file is called **more.py** 
 
+Seriously, you legit do not need to use any external tools for this challenge (maybe except pwntools). It's that literally that easy. 
 ## Solution 
 Look its very simple here. You dont need a fancy tool to solve this problem. This challenge is named *weak* for a reason. We're given a public key and from there we can extract juicy info from the key by using the following command 
 
-Seriously, you legit do not need to use any external tools for this challenge (maybe except pwntools). It's that literally that easy. 
 ```
 openssl rsa -text -pubin -in public_key.key 
 ```
